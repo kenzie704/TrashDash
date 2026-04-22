@@ -1,8 +1,9 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 // this means that our scripts can only be placed
 // on an object that has a RigidBody2D
-[RequireComponent (typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
     // script variables
@@ -30,10 +31,11 @@ public class PlayerMovement : MonoBehaviour
         physicsBody.linearVelocityX = speed;
     }
 
-
-
-
-
-
-
+    
 }
+
+
+
+
+    
+    

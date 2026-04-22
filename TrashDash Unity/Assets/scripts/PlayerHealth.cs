@@ -18,12 +18,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = startingHealth;
     }
 
-    public void ChangeHealth(string changeAmount)
-    {
-        currentHealth = currentHealth + changeAmount;
     
-    
-    }
 
 }
 
