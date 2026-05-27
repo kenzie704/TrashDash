@@ -31,7 +31,19 @@ public class PlayerMovement : MonoBehaviour
         physicsBody.linearVelocityX = speed;
     }
 
-    
+    public void MoveDown()
+    {
+        // go to the Rigidbody2D stored in our variable
+        physicsBody.linearVelocityY = -speed;
+    }
+
+
+    public void MoveUP()
+    {
+        physicsBody.linearVelocityY = speed;
+    }
+
+
 }
 
 
