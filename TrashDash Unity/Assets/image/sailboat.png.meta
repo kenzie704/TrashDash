@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sailboat_0: 572913833929865191
+      sailboat_1: -4539962101306676996
+      sailboat_2: -490613182966316372
+      sailboat_3: -3420243176015922240
+      sailboat_4: 6120519667657806808
+      sailboat_5: -7473901020599674049
+      sailboat_6: 3786662109371784761
+      sailboat_7: 6400385084938979567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
