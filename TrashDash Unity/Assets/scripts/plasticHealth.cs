@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class PlasticHealth : MonoBehaviour
 {
 
 
@@ -18,8 +18,6 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = startingHealth;
     }
 
-    
+
 
 }
-
-   
