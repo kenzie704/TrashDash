@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlasticHealth : MonoBehaviour
+public class Plastic : MonoBehaviour
 {
 
 

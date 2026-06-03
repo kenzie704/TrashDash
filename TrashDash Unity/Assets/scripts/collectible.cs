@@ -1,7 +1,10 @@
 using UnityEngine;
 
-public class collectible : MonoBehaviour
+public class Collectible : MonoBehaviour
 {
+    // A variable to hold the audio source to play sound effect
+    // we have to drag this in to unity
+    public AudioSource collectibleAudio;
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
@@ -10,13 +13,16 @@ public class collectible : MonoBehaviour
         Collider2D collider = collision.collider;
 
         // try to get the plastic health script attached to that object
-        PlasticHealth plastic = collider.GetComponent<PlasticHealth>();
+        Plastic plastic = collider.GetComponent<Plastic>();
 
         // check if we found a plastic health script on collided
         if (plastic != null)
         {
             // call the kill function on the plastic variable
             plastic.Kill();
+
+            // action to play the sound
+            collectibleAudio.Play();
         }
 
     }
