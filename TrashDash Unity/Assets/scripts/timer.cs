@@ -9,6 +9,7 @@ public class timer : MonoBehaviour
 
     void Update()
     {
+        // gets time if time goes below 0 switch to game over screen
         if (remainingTime > 0)
         {
             remainingTime -= Time.deltaTime;
@@ -25,7 +26,7 @@ public class timer : MonoBehaviour
         
 
 
-        remainingTime -= Time.deltaTime;
+        
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}",minutes,seconds);

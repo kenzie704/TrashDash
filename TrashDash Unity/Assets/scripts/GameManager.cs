@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private GameObject GameOverScreen;
+    [SerializeField] private GameObject gameOverScreen;
 
     //Game over screen is hidden
     //Reactivate game over screen
@@ -11,12 +11,12 @@ public class GameManager : MonoBehaviour
     //Restart the game
     void Start()
     {
-        GameOverScreen.SetActive(false);
+        gameOverScreen.SetActive(false);
     }
 
     public void TriggerGameOver()
     {
-        GameOverScreen.SetActive(true);
+        gameOverScreen.SetActive(true);
 
         Time.timeScale = 0f;
     }
